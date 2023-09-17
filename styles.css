@@ -9,8 +9,10 @@ h1{
     text-align: center;
 }
 
-
- 
 body{
   background-color: beige;
+}
+
+#sub-whereDreams{
+  text-align: left;
 }
