@@ -11,10 +11,10 @@ h1{
 
 body{
   background-color: beige;
-  margin: 25px;
-  width: 400px;
+  margin: 15px;
+  width: 500px;
   
-  @media(max-width: 600px) /*adjust to small screens*/
+  @media(max-width: 100px) /*adjust to small screens*/
   width:100%; 
 }
 
