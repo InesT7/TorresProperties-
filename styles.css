@@ -25,3 +25,35 @@ body{
 nav{
   color:brown;
 }
+
+/* Style for the footer container */
+.footer {
+  background-color: #333; /* Set the background color */
+  color: #fff; /* Set the text color */
+  padding: 10px; /* Add some space around the content */
+  text-align: center; /* Center-align the content */
+}
+
+/* Style for footer links */
+.footer a {
+  color: #fff; /* Set the link color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 7px; /* Add some space between links */
+}
+
+/* Style for footer links on hover */
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Optional: Adjust styles for mobile view */
+@media (max-width: 768px) {
+  .footer {
+      text-align: center;
+  }
+  
+  .footer a {
+      display: block;
+      margin: 10px auto;
+  }
+}
