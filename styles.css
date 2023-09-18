@@ -3,6 +3,9 @@
   border: 1px solid blue;
   font-size:x-small;
 }
+.navbar {
+  background-color: brown; /* Set the background color */
+}
 
 h1{
   color:brown;
