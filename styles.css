@@ -11,6 +11,11 @@ h1{
 
 body{
   background-color: beige;
+  margin: 25px;
+  width: 400px;
+  
+  @media(max-width: 600px) /*adjust to small screens*/
+  width:100%; 
 }
 
 #sub-whereDreams{
