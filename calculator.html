@@ -57,13 +57,38 @@
            <input type="number" id="expenses" required><br><br>
 
           <button id="calculate">Calculate</button><br><br>
-          <div id="roi-result"></div>
+          <div id="roi-result"></div> <br><br>
         </section>
       </main>
 
-      <script 
-      
-      ></script>
+      <script> 
+      $(document).ready(function(){
+        $('#calculate').click(function(){
+            var initialInvestment = $('#initial-investment').val();
+            var revenue = $('#revenue').val();
+            var expenses = $('#expenses').val();
+
+            if (initialInvestment === "" || revenue === "" || expenses === "") {
+                $('#roi-result').text("Please fill in all fields.");
+                return;
+            }
+
+            initialInvestment = parseFloat(initialInvestment);
+            revenue = parseFloat(revenue);
+            expenses = parseFloat(expenses);
+
+            if (isNaN(initialInvestment) || isNaN(revenue) || isNaN(expenses)) {
+                $('#roi-result').text("Please enter valid numbers.");
+                return;
+            }
+
+            var roi = ((revenue - expenses - initialInvestment) / initialInvestment) * 100;
+            roi = roi.toFixed(2);
+
+            $('#roi-result').text("ROI: " + roi + "%");
+        });
+    });
+      </script>
 
       <footer class="footer">
         <a href="index.html">Home</a> 
