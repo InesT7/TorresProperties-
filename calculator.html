@@ -64,6 +64,8 @@
       <script> 
       $(document).ready(function(){
         $('#calculate').click(function(){
+          // Clear previous result
+        $('#roi-result').empty();
             var initialInvestment = $('#initial-investment').val();
             var revenue = $('#revenue').val();
             var expenses = $('#expenses').val();
